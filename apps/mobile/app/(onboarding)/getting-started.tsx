@@ -30,27 +30,19 @@ export default function GettingStartedScreen() {
         </View>
 
         {/* Action Section */}
-        <View className="mt-8 space-y-4">
+        <View className="mt-12">
           <Pressable
             className="h-16 items-center justify-center rounded-2xl bg-blue-600 shadow-lg active:bg-blue-700"
             onPress={() => router.push('/(onboarding)/login')}>
             <View className="flex-row items-center">
-              <Text className="mr-2 text-xl font-bold text-white">Get Started</Text>
+              <Text className="mr-2 text-xl font-bold text-white">Continue</Text>
               <Ionicons name="arrow-forward" size={20} color="white" />
             </View>
-          </Pressable>
-
-          <Pressable 
-            className="mt-4 h-14 items-center justify-center rounded-2xl border border-gray-100 bg-gray-50 active:bg-gray-100"
-            onPress={() => router.push('/(onboarding)/login')}>
-            <Text className="text-base font-semibold text-gray-600">
-              Already have an account? <Text className="text-blue-600">Login</Text>
-            </Text>
           </Pressable>
         </View>
 
         {/* Footer info */}
-        <Text className="mt-8 text-center text-xs text-gray-400">
+        <Text className="mt-auto text-center text-xs text-gray-400">
           By continuing, you agree to our Terms and Privacy Policy
         </Text>
       </View>
